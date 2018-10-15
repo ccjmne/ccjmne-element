@@ -3,6 +3,7 @@ class MuAn extends HTMLElement {
     super()
     this.addEventListener('click', this.setEmoji)
   }
+
   static get emoji() {
     return ['😬', '🍵', '🤷🏻', '🧤', '🐟', '🏋🏻', '🎮', '👩🏻‍💻', '💅🏻', '📮']
   }
@@ -12,7 +13,8 @@ class MuAn extends HTMLElement {
   }
 
   setEmoji() {
-    this.innerHTML = MuAn.emoji[Math.floor(MuAn.emoji.length * Math.random())]
+    const idx = Math.floor(MuAn.emoji.length * Math.random())
+    this.innerHTML = this.innerHTML !== MuAn.emoji[idx] ? MuAn.emoji[idx] : MuAn.emoji[(idx + 1) % MuAn.emoji.length]
   }
 }
 
