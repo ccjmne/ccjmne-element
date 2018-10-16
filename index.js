@@ -5,7 +5,7 @@ class MuAn extends HTMLElement {
   }
 
   static get emoji() {
-    return ['😬', '🍵', '🤷🏻', '🧤', '🐟', '🏋🏻', '🎮', '👩🏻‍💻', '💅🏻', '📮']
+    return ['🙂', '🤯', '🐶', '🍣', '🍡', '🎻', '🇳🇿']
   }
 
   connectedCallback() {
