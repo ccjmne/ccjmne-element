@@ -1,4 +1,4 @@
-class MuAn extends HTMLElement {
+class ImAnElement extends HTMLElement {
   constructor() {
     super()
     this.addEventListener('click', this.setEmoji)
@@ -13,9 +13,9 @@ class MuAn extends HTMLElement {
   }
 
   setEmoji() {
-    const idx = Math.floor(MuAn.emoji.length * Math.random())
-    this.innerHTML = this.innerHTML !== MuAn.emoji[idx] ? MuAn.emoji[idx] : MuAn.emoji[(idx + 1) % MuAn.emoji.length]
+    const idx = Math.floor(ImAnElement.emoji.length * Math.random())
+    this.innerHTML = this.innerHTML !== ImAnElement.emoji[idx] ? ImAnElement.emoji[idx] : ImAnElement.emoji[(idx + 1) % ImAnElement.emoji.length]
   }
 }
 
-window.customElements.define('mu-an', MuAn)
+window.customElements.define('ccjmn-e', ImAnElement)
